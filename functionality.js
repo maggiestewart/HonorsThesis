@@ -27,3 +27,17 @@ function showFeature(feature) {
             content.innerHTML = '<h1>Stay tuned for our upcoming events!</h1>';
     }
 }
+
+function filterEvents(category) {
+    const events = document.querySelectorAll('.event');
+
+    events.forEach(e => {
+        const eventCategory = e.getAttribute('data-category');
+
+        if (category === 'all' || category === eventCategory) {
+            e.style.display = 'block';
+        } else {
+            e.style.display = 'none';
+        }
+    });
+}
