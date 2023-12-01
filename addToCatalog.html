@@ -15,22 +15,27 @@
     <a href="userLogin.html" id="navAccount"><img src="Images/account.png" alt="My Account" style="height: 35px"></a>
 </div>
 
-<div class="search-box" style="text-align: center; padding-top: 8%; padding-bottom: 15%">
-    <h2>Search the Catalog</h2>
-    <div class="searchItems" style="color: black; background-color: #c4b5a7; padding: 10px; border-radius: 10px; width: 60%; margin: auto">
-        <form action="http://3.145.193.254:8080/LibraryBR/SearchCatalog" method="post" style="width: 60%; margin: auto;">
-			<select name="searching" id="searching" style="padding-right: 10px">
-				<option value="keyword">Keyword</option>
-				<option value="title">Title</option>
-				<option value="author">Author</option>
-				<option value="genre">Genre</option>
-				<option value="ISBN">ISBN</option>
-			</select>
-			<input type="text" name="searchingType" id="searchingType" placeholder="Type here" style="color:black">
-			<input type="submit" value="Go">
-			<!-- <a href="#"><img class="image" src="Images/search.png" alt="Go"style="width: 2%; height: 2%;"></a> -->
-		</form>
-    </div>
+<div class="registerCard" style="padding-bottom: 5%; padding-top: 5%">
+	<h2 style="text-align: center">Suggest a book to add to the catalog!</h2>
+  <form action="http://3.145.193.254:8080/LibraryBR/AddBooks" method="post" style="width: 60%; margin: auto;">
+    <fieldset style="width: 30%; margin: auto">
+    <label>Title: <input name="title" id="title" type="text"></label>
+    <br>
+    
+    <label>Author: <input name="author" id="author" type="text"></label>
+    <br>
+	
+	<label>ISBN: <input name="iNum" id="iNum" type="text"></label>
+	<br>
+	
+	<label>Genre: <input name="genre" id="genre" type="text"></label>
+    <br>
+	
+    <input type="submit" value="Submit"></form>
+    </fieldset>
+	
+  </form>
+  
 </div>
 
 <div class="footer">

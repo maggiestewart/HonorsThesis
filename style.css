@@ -113,7 +113,7 @@ select, input {
 
 .menu {
     width: 200px;
-    height: 40vh;
+    height: 30vh;
     background-color: #404260;
     color: white;
     padding: 20px;
@@ -128,7 +128,6 @@ select, input {
     margin-bottom: 10px;
     cursor: pointer;
     padding-bottom: 20px;
-
 }
 
 .menu-item:hover {
@@ -159,3 +158,21 @@ select, input {
     background-color: #7488a7;
 }
 
+.hidden-radio {
+    display: none;
+}
+
+.custom-radio {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #404260;
+    border-radius: 3px;
+    background-color: #404260;
+    color: #ffffff;
+}
+
+.custom-radio input:checked + label {
+    background-color: #d18852;
+    border-color: #d18852;
+}
