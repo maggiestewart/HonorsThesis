@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Library BR</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body style="margin: 0;">
+<div class="navbar" style="background-color: #3E505B">
+    <a href="index.html" id="logo"><img id="navLogo" src="Images/libraryLogo.svg" style="height: 80px;" alt="LibraryBR"></img></a>
+    <a href="https://www.ebrpl.com/digitallibrary/" id="digital">Digital Library</a>
+    <a href="services.html" id="services">Services</a>
+	<a href="http://3.145.193.254:8080/LibraryBR/GetEventList" id="navEvents">Events</a>
+	<a href="catalog.html" id="navCatalog">Catalog</a>
+    <a href="http://3.145.193.254:8080/LibraryBR/IsLoggedIn" id = "navAccount"><img src="Images/account.png" alt="My Account" style="height: 35px"></a>
+    <!-- <a href="userLogin.html" id="navAccount"><img src="Images/account.png" alt="My Account" style="height: 35px"></a> -->
+</div>
+
+<!-- Image credits
+
+https://www.throughlinegroup.com/wp-content/uploads/2012/12/Book-Reading2-1-1024x768.jpg
+https://bpb-eu-w2.wpmucdn.com/blogs.reading.ac.uk/dist/9/15/files/2018/01/pens-paper-desk-1024x682.jpg
+https://greenvillejournal.com/wp-content/uploads/2020/03/DSC_0461-1160x653.jpg
+https://i0.wp.com/www.metroweekly.com/wp-content/uploads/2016/04/5510506796_e0aceddf28_o.jpg?resize=1024%2C683&ssl=1
+
+-->
+
+<div style="display: grid; margin: auto; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; width: 90%; place-items: center;grid-template-rows: repeat(3, 1fr); padding-top: 3%; padding-bottom: 3%;">
+   <div class="grid-item" style="text-align: center;"> <!--border: none; width: 90%" id="cardSignUp">-->
+		<a href="http://18.222.29.185/LibraryBR/userRegistration.html"><img src="Images/libraryCard.png" style="width: 65%; border-radius: 2%"></a>
+        <h3>Library Card</h3>
+        <p style="text-align: left; width: 70%; margin: auto">Visit your local branch with a valid photo ID and proof of your current address to start this process or register online <a href="http://18.222.29.185/LibraryBR/userLogin.html">here</a>!</p>
+    </div>
+
+     <div class="grid-item" style="text-align: center;"> <!-- border: none; width: 90%" id="meetingReserve"> -->
+	 <form action="http://3.145.193.254:8080/LibraryBR/MeetingRooms" method="post" style="width: 60%; margin: auto;">
+        <button type="submit"><img src="Images/meeting-rooms.jpeg" style="width: 100%; border-radius: 2%"></button></form>
+        <h3>Request a Meeting Room</h3>
+        <p style="text-align: left; width: 70%; margin: auto">Looking for a space for an upcoming event or meeting? Spaces must be requested using our new online form 2 weeks in advance.</p>
+    </div>
+
+     <div class="grid-item" style="text-align: center;"> <!--border: none; width: 90%" id="studyReserve">-->
+	 <form action="http://3.145.193.254:8080/LibraryBR/StudyRooms" method="post" style="width: 60%; margin: auto;">
+        <button type="submit"><img src="Images/study-rooms.jpeg" style="width: 100%; border-radius: 2%"></button></form>
+        <h3>Reserve a Study Room</h3>
+        <p style="text-align: left; width: 70%; margin: auto">Have a small meeting? Want a quiet environent to study? Reserve one of our study rooms (first come first serve basis)!</p>
+    </div>
+	
+<!--
+<div class="intro" style="grid-template-rows: repeat(3, 1fr); padding-bottom: 5%">
+    <div class="grid-item" style="text-align: center;">
+        <img src="Images/libraryCard.png" style="width: 70%">
+        <h3>Library Card</h3>
+        <p style="text-align: left; width: 70%; margin: auto">Obtaining your library card is a simple and rewarding process. Visit your local branch with a valid photo ID and  proof of your current address to start this process!</p>
+    </div>
+	-->
+
+    <div class="grid-item" style="text-align: center">
+        <img src="Images/book-background3.jpeg" style="width: 65%; border-radius: 2%">
+        <h3>Online Research Databases</h3>
+        <p style="text-align: left; width: 70%; margin: auto">Unlock a world of knowledge with our online research database, including scholarly articles, books, journals, and research materials</p>
+    </div>
+
+    <div class="grid-item" style="text-align: center">
+        <img src="Images/3d-printing.jpeg" style="width: 65%; border-radius: 2%">
+        <h3>Makerspace / 3D Printing</h3>
+        <p style="text-align: left; width: 70%; margin: auto">Step into the future of creativity and innovation at our makerspace, equipped with cutting-edge 3D printing technology.</p>
+    </div>
+
+    <div class="grid-item" style="text-align: center">
+        <img src="Images/bookTalk.png" style="width: 60%; border-radius: 2%">
+        <h3>Book Clubs / Author Visits</h3>
+        <p style="text-align: left; width: 70%; margin: auto">Join our vibrant community of readers and writers at our book club with occasional special author visits. </p>
+    </div>
+
+    <div class="grid-item" style="text-align: center">
+        <img src="Images/dictionary.png" style="width: 70%; border-radius: 2%">
+        <h3>Language Learning Resources</h3>
+        <p style="text-align: left; width: 70%; margin: auto">Experience the world of language learning like never before with our comprehensive language resources. Immerse yourself in diverse courses and unleash your communication skills.</p>
+    </div>
+
+    <div class="grid-item" style="text-align: center">
+        <img src="Images/homework.png" style="width: 70%; border-radius: 2%">
+        <h3>Homework Tutoring</h3>
+        <p style="text-align: left; width: 70%; margin: auto">Elevate your academic journey with our homework and tutoring resources. Dive into a wealth of support, from expert-guided sessions to comprehensive study materials.</p>
+    </div>
+	
+	<div class="grid-item" style="text-align: center;"> <!-- border: none; width: 90%">-->
+        <img src="Images/donations.jpeg" style="width: 75%; border-radius: 2%">
+        <h3>Donations</h3>
+        <p style="text-align: left; width: 70%; margin: auto">Doing some spring cleaning? Donate gently used books to your nearest library branch! We are only able to take a maximum of 2 medium sized boxes per person per day. </p>
+    </div>
+</div>
+
+
+<div class="footer" style="background-color: #3E505B">
+    <a href="index.html"><img src="Images/libraryLogo.svg" style="height: 80px" alt="LibraryBR"></a>
+    <div class="intro">
+        <div class="grid-item" style="color: white">
+            <h4>Library Resources</h4> 
+            <a href="http://3.145.193.254:8080/LibraryBR/IsLoggedIn" id="account" style="color: white">My Account</a>
+			<!-- <a href="userLogin.html" id="account" style="color: white">My Account</a> -->
+            <a href="catalog.html" id="catalog" style="color: white">Library Catalog</a>
+            <a href="services.html" id="card" style="color: white">Library Card</a>
+            <a href="addToCatalog.html" id="add" style="color: white">Suggest a book</a>
+        </div>
+
+        <div class="grid-item" style="color: white">
+            <h4>Contact Us</h4>
+            <div class="socials" style="display: flex; flex-direction: row;">
+                <a><img src="Images/facebook.png" style="height: 25px" alt="Facebook"></a>
+                <a><img src="Images/instagram.png" style="height: 25px" alt="Instagram"></a>
+                <a><img src="Images/twitter.png" style="height: 25px" alt="Twitter"></a>
+                <a><img src="Images/youtube.png" style="height: 25px" alt="Youtube"></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
